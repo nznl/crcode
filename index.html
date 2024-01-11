@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>选择标签</title>
   <style>
     :root {
@@ -89,34 +89,35 @@
           font-size: var(--16);
         }
       }
-
-      .search-list {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 14px;
-		margin-top: 20px;
-
-        .list {
-          padding: 8px 16px;
-          border: 4px;
-          border: 1px solid #ccc;
-          margin: 0 10px 10px 0px;
-          border-radius: 4px;
-          cursor: pointer;
-		  font-size: 20px;
-        }
-        .list-active {
-          color: #0099e5;
-		  font-size: 20px;
-        }
-      }
     }
+
 	.tips {
 		padding: 10px 20px;
 		margin-top: 60px;
 		font-size: 16px;
 		color: #0099e5;
 	}
+  .search-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 14px;
+		    margin-top: 20px;
+        
+      }
+      .search-list .list {
+          padding: 8px 16px;
+          border: 4px;
+          border: 1px solid #ccc;
+          margin: 0 10px 10px 0px;
+          border-radius: 4px;
+          cursor: pointer;
+		      font-size: 20px;
+        }
+        .search-list .list-active {
+          color: #0099e5;
+		    font-size: 20px;
+        border-color: #0099e5;
+        }
   </style>
 </head>
 
